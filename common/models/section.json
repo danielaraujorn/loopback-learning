@@ -1,0 +1,36 @@
+{
+  "name": "Section",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "fullDescription": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "introVideo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "lessons": {
+      "type": "hasMany",
+      "model": "Lesson",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
